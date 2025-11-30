@@ -1,0 +1,8 @@
+name: discord-bot
+services:
+  - name: bot
+    type: worker
+    env:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+    run:
+      command: python3 main_final2.py
